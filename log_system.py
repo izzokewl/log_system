@@ -9,3 +9,5 @@
 # 2nd program: attendance list system
 # will print the list of entries that are log in attendance in, on lunch or punched out
 # the list will also be updated if the user logs everytime in program 1
+
+#pseudocodes muna sir hehe
