@@ -20,10 +20,15 @@ attempt = len(attendance[nameinput])
 
 if attempt < len(log_entries):
     log_time = datetime.datetime.now().strftime("%H:%M")
-
     attendance[nameinput][log_entries[attempt]] = log_time
-    
     print(f"{nameinput} punched for {log_entries[attempt]}")
     print(f"Time punched: {log_time}\n")
 else:
     print(f"{nameinput} has already completed punches for the day\n")
+
+while True:
+    new_entry = input("Do you want to punch another entry?\nYES or NO\n").strip().upper()
+    if new_entry != "YES":
+        break
+    else:
+        print("\nYou have entered a wrong input, please enter YES or NO\n")
